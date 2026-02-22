@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { drizzle } from "drizzle-orm/node-postgres";
-import { Pool } from "pg";
+import pg from "pg";
 
 if (!process.env.DATABASE_URL) {
   throw new error("DATABASE_URL is not defined");
